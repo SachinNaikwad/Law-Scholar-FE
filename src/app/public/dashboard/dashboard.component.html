@@ -1,0 +1,110 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="#" class="brand-logo">LawScholar</a>
+    <ul class="nav-links" [ngClass]="{'active': isNavOpen}">
+      <li><a routerLink="/home">Home</a></li>
+      <li class="dropdown">
+        <a routerLink="/books" class="dropbtn">Books</a>
+        <div class="dropdown-content">
+          <a routerLink="/books/textbooks">Textbooks</a>
+          <a routerLink="/books/casestudies">Case Studies</a>
+          <a routerLink="/books/ebooks">E-books</a>
+        </div>
+      </li>
+      <li><a routerLink="/about">About Us</a></li>
+      <li><a routerLink="/contact">Contact Us</a></li>
+    </ul>
+    <button class="nav-toggle" (click)="toggleNav()">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Welcome to LawScholar</h1>
+    <p>Your gateway to comprehensive legal education and resources.</p>
+    <a routerLink="/courses" class="btn-primary">Explore Ai</a>
+  </div>
+</div>
+
+<div class="overview">
+  <div class="container">
+    <div class="section">
+      <h2>About Us</h2>
+      <p>At LawScholar, we believe that legal education should be accessible, comprehensive, and engaging. Our platform offers a diverse range of legal courses designed by industry experts to help you advance your knowledge and career. Whether you're just starting out or looking to specialize, we have the resources you need to succeed.</p>
+      <p>Our team consists of experienced legal professionals, educators, and technologists who are committed to providing high-quality educational content. We strive to create an inclusive learning environment where every student can thrive and achieve their full potential.</p>
+      <p>From foundational courses to advanced topics, our content is meticulously curated to ensure you gain practical skills and theoretical knowledge that will benefit you throughout your legal career.</p>
+    </div>
+    <div class="section">
+      <h2>Our Features</h2>
+      <ul>
+        <li><strong>Expert-Led Courses:</strong> Learn from top legal professionals and educators with real-world experience. Our instructors bring a wealth of knowledge to each course, ensuring you receive high-quality instruction.</li>
+        <li><strong>Interactive Content:</strong> Engage with quizzes, case studies, and practical exercises that enhance understanding and retention. Our interactive tools are designed to make learning more engaging and effective.</li>
+        <li><strong>Flexible Learning:</strong> Access materials anytime, anywhere, and learn at your own pace. Whether you have a busy schedule or prefer a more structured approach, our platform accommodates your needs.</li>
+        <li><strong>Certification:</strong> Earn certificates to validate your skills and advance your career. Our certification programs are recognized in the industry and can help you stand out in a competitive job market.</li>
+        <li><strong>Community Support:</strong> Connect with peers and mentors in our vibrant community forums. Share insights, ask questions, and collaborate with others who share your passion for the law.</li>
+        <li><strong>Resource Library:</strong> Access a comprehensive library of legal resources, including articles, research papers, and case studies. Our resource library is constantly updated to provide you with the latest information and insights.</li>
+        <li><strong>Personalized Learning Paths:</strong> Tailor your learning experience with customized course recommendations based on your interests and career goals. Our platform uses advanced algorithms to suggest relevant courses and content.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p><strong>Sarah Johnson, Legal Consultant:</strong> “LawScholar's courses are both insightful and practical. The interactive content helped me grasp complex legal concepts easily. The flexibility to learn at my own pace has been invaluable.”</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>Michael Lee, Law Student:</strong> “The range of topics and the quality of the instruction have significantly enhanced my legal knowledge. The platform is user-friendly and effective, and the community support is outstanding.”</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>Emily Davis, Attorney at Law:</strong> “I was impressed by the depth and breadth of the courses available on LawScholar. The certification I earned has helped me advance my career and gain recognition in my field.”</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Recent Blog Posts</h2>
+      <div class="blog-post">
+        <h3><a routerLink="/blog/understanding-contract-law">Understanding Contract Law: A Comprehensive Guide</a></h3>
+        <p>Explore the fundamental principles of contract law and how they apply in various scenarios. This guide provides a clear overview for both beginners and advanced learners, covering essential concepts and practical applications.</p>
+      </div>
+      <div class="blog-post">
+        <h3><a routerLink="/blog/legal-research-methods">Effective Legal Research Methods for Law Students</a></h3>
+        <p>Discover effective strategies for conducting legal research. Learn about essential tools and techniques to enhance your research skills and academic performance. This post provides practical advice and resources for law students and professionals.</p>
+      </div>
+      <div class="blog-post">
+        <h3><a routerLink="/blog/ethics-in-law">Ethics in Law: Principles and Practices</a></h3>
+        <p>Understand the ethical principles that govern legal practice. This article delves into the core ethical standards for attorneys and explores how these principles guide professional conduct and decision-making.</p>
+      </div>
+      <div class="blog-post">
+        <h3><a routerLink="/blog/legal-tech-trends">The Future of Legal Technology: Trends and Innovations</a></h3>
+        <p>Explore the latest trends and innovations in legal technology. From AI and machine learning to blockchain and e-discovery, this post provides an overview of how technology is transforming the legal industry.</p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated with the latest news, course offerings, and legal insights. Sign up for our newsletter to receive curated content directly in your inbox. We promise to keep your information confidential and only send relevant updates.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us. Our dedicated support team is here to help you with any inquiries or concerns you may have:</p>
+      <p><strong>Email:</strong> <a href="mailto:support@lawscholars.com">supportlawscholars.com</a></p>
+      <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+      <p><strong>Address:</strong> 123 Legal Lane, Suite 100, Law City, LC 12345</p>
+      <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM (EST)</p>
+      <p><strong>Follow Us:</strong></p>
+      <ul class="social-media">
+        <li><a href="#" class="social-link">Facebook</a></li>
+        <li><a href="#" class="social-link">Twitter</a></li>
+        <li><a href="#" class="social-link">LinkedIn</a></li>
+        <li><a href="#" class="social-link">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
